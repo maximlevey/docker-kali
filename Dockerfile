@@ -9,7 +9,7 @@ RUN apt-get update \
     && apt-get clean
 
 # Install Desktop
-RUN apt-get kali-desktop-xfce tightvncserver net-tools
+RUN apt-get -y install kali-desktop-xfce tightvncserver net-tools
 
 ENV USER=admin
 ENV PASSWORD=kali
