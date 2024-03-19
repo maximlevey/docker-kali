@@ -12,7 +12,7 @@ RUN apt-get update \
 RUN apt-get kali-desktop-xfce tightvncserver net-tools
 
 ENV USER=admin
-ENV PASSWORD=ubuntu
+ENV PASSWORD=kali
 
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
